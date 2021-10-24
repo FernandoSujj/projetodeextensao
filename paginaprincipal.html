@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/css.css" media="screen">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header id="header">
+        <a href="paginaprincipal.html">
+            <img id="logo" src="./imagens/logo (1).png">
+        </a>
+        <nav id="nav">
+            <button id="btn-mobile">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="paginaprincipal.html" ><strong>Página Inicial</strong></a></li>
+                <li><a href="parques.html"><strong>Parques</strong></a></li>
+                <li><a href="exercicios.html"><strong>Exercícios</strong></a></li>
+                <li><a href="aplicativo.html"><strong>Aplicativo</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="img1">
+            <img id="imgPi1" src="./imagens/imgprincipal2.jpg">
+        </div>
+        <div class="blocoPi">
+            <di class="blocoPi-1-1">
+                <div class="blocoPi-1-1-1">
+                    <img class="img-bloco1" src="./imagens/logo preto em branco.jpg">
+                    <label class="txt-bloco1" for="img-bloco1">Criação da</label>
+                </div>
+                <div class="blocoPi-1-1-2">
+                    <p>A QL surgiu para construir relações tanto entre pessoas com pessoas e pessoas com a natureza, somos uma empresa de tecnologia sem fins lucrativos, trazendo melhoras para a saúde da população.</p>
+                </div>
+            </div>
+            <di class="blocoPi-2-1">
+                <div class="blocoPi-2-1-1">
+                    <img class="img-bloco2" src="./imagens/logo (1).png">
+                    <label class="txt-bloco2" for="img-bloco1">O jeito da</label>
+                </div>
+                <div class="blocoPi-2-1-2">
+                    <p>O nosso jeito de fazer as coisas, é trazer para a sociedade uma saúde de vida melhor de um jeito simples e junto com a natureza.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerBlocos">
+            <div id="divFooterBloco">
+                <p id="pfooterTitle">QL</p>
+                <a id="aFooter" href="paginaprincipal.html">Página Inicial</a>
+                <a id="aFooter" href="parques.html">Parques</a>
+                <a id="aFooter" href="exercicios.html">Exercícios</a>
+                <a id="aFooter" href="aplicativo.html">Aplicativo</a>
+            </div>
+            <div id="divFooterBloco">
+                <p id="pfooterTitle">Fale com a gente</p>
+                <a id="aFooter" href="#">(xx)xxxx-xxxx</a>
+                <a id="aFooter" href="#">contato@ql.com</a>
+            </div>
+            <div id="divFooterIcon">
+                <a id="icon" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+        <div id="divBloco2">
+            <a href="paginaprincipal.html">
+                <img id="footerLogo" src="./imagens/logo preto em branco.jpg">
+            </a>
+            <div id="fotterTexto">
+                <p>© 2021 QL - Quality of life S.A Instituição de tecnologia.<br>
+                Rua Taquari, 546 - Mooca, São Paulo - SP, 03166-000</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btnMobile = window.document.getElementById('btn-mobile');
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault()
+            const nav = window.document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
+</body>
+</html>

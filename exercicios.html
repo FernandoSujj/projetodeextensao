@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/css.css" media="screen">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Exercícios</title>
+</head>
+<body>
+    <header id="header">
+        <a href="paginaprincipal.html">
+            <img id="logo" src="./imagens/logo (1).png">
+        </a>
+        <nav id="nav">
+            <button id="btn-mobile">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="paginaprincipal.html" ><strong>Página Inicial</strong></a></li>
+                <li><a href="parques.html"><strong>Parques</strong></a></li>
+                <li><a href="exercicios.html"><strong>Exercícios</strong></a></li>
+                <li><a href="aplicativo.html"><strong>Aplicativo</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img id="imgEx1" src="./imagens/exercicio1.jpg">
+        </div>
+        <div>
+            <h1 id="tEx">Escolha o nível de treinamento</h1>
+        </div>
+        <div>
+            <div id="blocosEx">
+                <div id="bordaEx">
+                    <img src="./imagens/exercicios/infantil2.jpg" width="200px" height="180px">
+                    <div id="divBlocoEx">
+                        <p id="pEx1">Infatil</p>
+                        <p id="pEx2">O treinamento infantil é serve para que as crianças possam desenvolver a sua capacidade física e se divertirem ao mesmo tempo.</p>
+                    </div>
+                    <div id="divBtnEx">
+                        <a href="#">
+                            <input type="button" id="btnEx" value="Ver o treino">
+                        </a>
+                    </div>   
+                </div>
+                <div id="bordaEx">
+                    <img src="./imagens/exercicios/leve1.jpg" width="200px" height="180px">
+                    <div id="divBlocoEx">
+                        <p id="pEx1">Leve</p>
+                        <p id="pEx2">Ideal para pessoas que estão começando a praticar exercícios físicos, e que, precisam aumentar a sua capacidade física.</p>
+                    </div>
+                    <div id="divBtnEx">
+                        <a href="leve.html">
+                            <input type="button" id="btnEx" value="Ver o treino">
+                        </a>
+                    </div>  
+                </div>
+                <div id="bordaEx">
+                    <img src="./imagens/exercicios/moderado1.jpg" width="200px" height="180px">
+                    <div id="divBlocoEx">
+                        <p id="pEx1">Moderado</p>
+                        <p id="pEx2">O treino moderado tem como foco para as pessoas que já treinavam antes e querem manter o corpo físico.</p>
+                    </div>
+                    <div id="divBtnEx">
+                        <a href="moderado.html">
+                            <input type="button" id="btnEx" value="Ver o treino">
+                        </a>
+                    </div>  
+                </div>
+                <div id="bordaEx">
+                    <img src="./imagens/exercicios/vigoroso.jpg" width="200px" height="180px">
+                    <div id="divBlocoEx">
+                        <p id="pEx1">Vigoroso</p>
+                        <p id="pEx2">Tipo de treinamento focado para pessoas que querem um treino mais intenso e ter um desenvolvimento físico para parecer de um atleta profissional.</p>
+                    </div>
+                    <div id="divBtnEx">
+                        <a href="#">
+                            <input type="button" id="btnEx" value="Ver o treino">
+                        </a>
+                    </div>  
+                </div>
+                <div id="bordaEx">
+                    <img src="./imagens/exercicios/idoso.jpg" width="200px" height="180px">
+                    <div id="divBlocoEx">
+                        <p id="pEx1">Idosos</p>
+                        <p id="pEx2">Com o passar dos anos, o corpo não é mais o mesmo, e essa seríe de treino é manter a capacidade física sem causar grandes problemas físicos.</p>
+                    </div>
+                    <div id="divBtnEx">
+                        <a href="#">
+                            <input type="button" id="btnEx" value="Ver o treino">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerBlocos">
+            <div id="divFooterBloco">
+                <p id="pfooterTitle">QL</p>
+                <a id="aFooter" href="paginaprincipal.html">Página Inicial</a>
+                <a id="aFooter" href="parques.html">Parques</a>
+                <a id="aFooter" href="exercicios.html">Exercícios</a>
+                <a id="aFooter" href="aplicativo.html">Aplicativo</a>
+            </div>
+            <div id="divFooterBloco">
+                <p id="pfooterTitle">Fale com a gente</p>
+                <a id="aFooter" href="#">(xx)xxxx-xxxx</a>
+                <a id="aFooter" href="#">contato@ql.com</a>
+            </div>
+            <div id="divFooterIcon">
+                <a id="icon" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+        <div id="divBloco2">
+            <a href="paginaprincipal.html">
+                <img id="footerLogo" src="./imagens/logo preto em branco.jpg">
+            </a>
+            <div id="fotterTexto">
+                <p>© 2021 QL - Quality of life S.A Instituição de tecnologia.<br>
+                Rua Taquari, 546 - Mooca, São Paulo - SP, 03166-000</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btnMobile = window.document.getElementById('btn-mobile');
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault()
+            const nav = window.document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
+</body>
+</html>

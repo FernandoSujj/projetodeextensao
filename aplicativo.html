@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/css.css" media="screen">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Aplicativo</title>
+</head>
+<body id="bodyCo">
+    <header id="header">
+        <a href="paginaprincipal.html">
+            <img id="logo" src="./imagens/logo (1).png">
+        </a>
+        <nav id="nav">
+            <button id="btn-mobile">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="paginaprincipal.html" ><strong>Página Inicial</strong></a></li>
+                <li><a href="parques.html"><strong>Parques</strong></a></li>
+                <li><a href="exercicios.html"><strong>Exercícios</strong></a></li>
+                <li><a href="aplicativo.html"><strong>Aplicativo</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="secBloco"><div id=""><h1 id="h1Bloco">Aplicativo</h1></div></section>        
+            <div class="slide-main">
+                <div class="divApl">
+                    <div class="pApl-1">
+                        <h1>Sobre o aplicativo</h1>
+                        <p>O aplicativo da QL tem o proposito de fazer as pessoas a procurarem o parque mais próximos delas e fazer exercícios junto com a natureza, permitindo uma melhor qualidade na hora de fazer exercícios. Ao selecionar o parque mais próximo da região, aparecerá algumas informações do parque e existe a opção de fazer exercícios que foram planejados para o parque.</p>
+                        <p class="pApl-2">Em desenvolvimento</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <h1 class="h1Apl-1">Imagens do Aplicativo</h1>
+                    <div class="slides">
+                        <!--Slides-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        <div class="slide first">
+                            <img src="./imagens/aplicativo/tela-inicial.PNG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./imagens/aplicativo/parques1.PNG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./imagens/aplicativo/parques2.PNG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./imagens/aplicativo/parques3.PNG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./imagens/aplicativo/exercicios.PNG" alt="">
+                        </div>
+                        <!--Navegador-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <div id="footerBlocos">
+            <div id="divFooterBloco">
+                <p id="pfooterTitle">QL</p>
+                <a id="aFooter" href="paginaprincipal.html">Página Inicial</a>
+                <a id="aFooter" href="parques.html">Parques</a>
+                <a id="aFooter" href="exercicios.html">Exercícios</a>
+                <a id="aFooter" href="aplicativo.html">Aplicativo</a>
+            </div>
+            <div id="divFooterBloco">
+                <p id="pfooterTitle">Fale com a gente</p>
+                <a id="aFooter" href="#">(xx)xxxx-xxxx</a>
+                <a id="aFooter" href="#">contato@ql.com</a>
+            </div>
+            <div id="divFooterIcon">
+                <a id="icon" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                <a id="icon" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+        <div id="divBloco2">
+            <a href="paginaprincipal.html">
+                <img id="footerLogo" src="./imagens/logo preto em branco.jpg">
+            </a>
+            <div id="fotterTexto">
+                <p>© 2021 QL - Quality of life S.A Instituição de tecnologia.<br>
+                Rua Taquari, 546 - Mooca, São Paulo - SP, 03166-000</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btnMobile = window.document.getElementById('btn-mobile');
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault()
+            const nav = window.document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            window.document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 5){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
