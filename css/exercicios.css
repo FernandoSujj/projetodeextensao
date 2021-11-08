@@ -1,257 +1,41 @@
-body, ul{
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-}
-
-a{
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-a:hover{
-    color: #79e85d;
-}
-
-/*------------------------------header-------------------------------*/
-#logo{
-    width: 90px;
-    height: 90px;
-    margin-left: 20px;
-    margin-top: 4px;
-}
-
-#header{
-    box-sizing: border-box;
-    margin-left: -10px;
-    margin-top: -30px;
-    width: 100%;
-    height: 130px;
-    padding: 1rem;
+/*----------------------- Imagens ------------------------*/
+.gif-exercicio{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    background-color: white;
-}
-
-#menu{
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-    margin-top: 21px;
-}
-
-#menu a{
-    display: block;
-    padding: .5rem;
-}
-
-#btn-mobile{
-    display: none;
-}
-
-@media (max-width: 600px) {
-    #menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background: white;
-        height: 0px;
-        transition: .6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav.active #menu{
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    #menu a{
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid #79e85d;
-    }
-
-    #btn-mobile{
-        display: flex;
-        padding: .5rem .1rem;
-        font-size: .1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-
-    #hamburguer{
-        border-top: 2px solid;
-        width: 20px;
-    }
-
-    #hamburguer::after ,#hamburguer::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background-color: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    nav.active #hamburguer{
-        border-top-color: transparent;   
-    }
-
-    nav.active #hamburguer::before{
-        transform: rotate(135deg);   
-    }
-
-    nav.active #hamburguer::after{
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-}
-
-/*-----------------------------Footer----------------------------------*/
-footer{
-    position: absolute;
-	background-color: rgb(25, 25, 25);
-	width: 100%;
-    height: 440px;
-    margin-top: 43px;
-}
-
-#footerBlocos{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.3rem 3rem;
-}
-
-#divFooterBloco{
-    display: block;
-    white-space: pre-line;
-}
-
-#pfooterTitle{
-    font: normal 16pt sans-serif;
-    color: white;
-}
-
-#aFooter{
-    color: white;
-    font: bold 14pt sans-serif;
-    line-height: 1.6;
-}
-
-#aFooter:hover{
-    color: #79e85d;
-    font: bold 14pt sans-serif;
-    line-height: 1.6;
-}
-
-#divFooterIcon{
-    display: inline-block;
-    margin-top: 1.9rem;
-}
-#icon{
-    color: white;
-    padding-left: 10px;
-}
-
-#icon:hover{
-    color: #79e85d;
-}
-
-#divBloco2{
-    display: block;
-    justify-content: space-between;
-}
-
-#footerLogo{
-    width: 100px;
-    height: 100px;
-    padding: 0.2rem 1.9rem;
-}
-
-#fotterTexto{
-    font: normal 12pt sans-serif;
-    color: white;
-    margin-top: -85px;
-    margin-left: 140px;
-}
-
-/*-----------------------Imagens------------------------*/
-#imgEx1{
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: -1%;
-    width: 100%;
-    height: 630px;
-    display: block;
-    position: relative;
 }
 
 .img-gif{
-    margin-left: 20%;
-    margin-top: 10px;
-}
-/*-----------------------Paragráfos------------------------*/
-.titleEx{
-    text-align: center;
-    font: bold 18pt sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.titleDicas{
-    text-align: center;
-    font: bold 14pt sans-serif;
-    padding-bottom: 10px;
+/*----------------------- Fontes e Tamanhos ------------------------*/
+.secao-exercicios .titulo-terciario {
+    font-weight: normal;
+    padding: 0px 1.05rem;
 }
 
-.titleExercicios{
-    text-align: center;
-    font: bold 14pt sans-serif;
-    padding-bottom: 10px;
+.label-content {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
 }
 
-.tipoExercicio{
-    text-align: right;
-    font: bold 12pt sans-serif;
-    padding-bottom: 10px;
-    padding-right: 10%;
+#titulo-exercicio {
+    margin: 5% auto;
 }
 
-.tipoExercicio2{
-    text-align: right;
-    font: bold 12pt sans-serif;
-    padding-bottom: 10px;
-    padding-right: 10%;
-    padding-top: 10px;
-}
+
 /*-----------------------Accordion------------------------*/
-.border1{
+.secao-orientacoes, .secao-exercicios{
     width: 80%;
     margin-left: 10%;
     border: solid 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.border2{
-    width: 80%;
-    margin-left: 10%;
-    border: solid 1px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-top: 10px;
+    padding: 10px 0px;
+    margin-bottom: 5%;
 }
 
 .accordion-main{
@@ -263,13 +47,15 @@ footer{
     max-width: 100%;
 }
 
-.label-content{
-    font: bold 14pt sans-serif;
+.content{
+    width: 100%;
+    
 }
 
-.content{
-    font: normal 14pt sans-serif;
-    padding-left: 10px;
+.content li{
+    list-style: '- ';
+    margin-left: -2%;
+    margin-top: 1%;
 }
 
 .accordion .contentBx{
@@ -313,3 +99,27 @@ footer{
 }
 
 
+@media (max-width: 700px) {
+    .img-gif {
+        width: 100%;
+        margin-right: 7%;
+    }
+
+    
+
+    .content{
+        width: 100%;
+    }
+
+    .content li{
+        margin-left: -8%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 880px) {
+    .img-gif {
+        width: 100%;
+        margin: 0;
+    }
+
+}

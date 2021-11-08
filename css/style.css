@@ -1,0 +1,373 @@
+body {
+    font: 12px sans-serif;
+}
+
+body{
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+/*------------------------------ Fontes e Tamanhos ------------------------------*/
+.titulo-inicial {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.titulo-principal {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.titulo-secundario {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.titulo-terciario {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+p, a, li {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    color: #79e85d;
+}
+
+.strong-text {
+    font-weight: bold;
+}
+
+.inicial-image{
+    width: 100%;
+    display: block;
+    height: 630px;
+    margin-top: -1%;
+}
+
+/*------------------------------ Header -------------------------------*/
+#logo{
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+#header{
+    box-sizing: border-box;
+    margin-left: -10px;
+    margin-top: -30px;
+    width: 100%;
+    height: 130px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    margin-top: 21px;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+    font-size: 1.25em;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+/*-----------------------------Footer----------------------------------*/
+footer {
+	background-color: rgb(25, 25, 25);
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "nav cont" 
+        "copyr copyr"
+    ;
+    justify-items: center;
+}
+
+#nav-footer {
+    text-align: center;
+    grid-area: nav;
+    margin-top: 10%;
+}
+
+#contato {
+    grid-area: cont;
+    margin-top: 10%;
+}
+
+#copyright {
+    grid-area: copyr;
+    margin-bottom: 5%;
+}
+
+#copyright a {
+    margin: 35%;
+}
+
+.icons-list {
+    display: flex;
+}
+
+.aFooter{
+    line-height: 1.6;
+    display: block;
+}
+
+.aFooter:hover{
+    color: #79e85d;
+}
+
+.icon{
+    color: white;
+    margin-right: 10px;
+}
+
+.icon:hover{
+    color: #79e85d;
+}
+
+#footerLogo{
+    width: 100px;
+    height: 100px;
+}
+
+/*---------------------------- Mobile ----------------------------*/
+@media screen and (max-width: 700px) {
+    /* Base, Fontes e Tamanhos*/
+    body {
+        font: normal 12px sans-serif;
+    }
+
+    .inicial-image{
+        width: 100%;
+        display: block;
+        height: 440px;
+        margin-top: -1%;
+    }
+
+    .titulo-inicial {
+        font-size: 3em;
+    }
+
+    .titulo-principal {
+        font-size: 2.3em;
+    }
+
+    .titulo-secundario {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .titulo-terciario {
+        font-size: 1.75em;
+    }
+
+    p, a, li {
+        font-size: 1.5em;
+    }
+
+    .strong-text {
+        font-weight: bold;
+    }
+
+    /* Header */
+
+    #header {
+        padding-bottom: 0px;
+    }
+
+    #logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: white;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #79e85d;
+        font-size: 1.05em;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem .1rem;
+        font-size: .1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after ,#hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    nav.active #hamburguer{
+        border-top-color: transparent;   
+    }
+
+    nav.active #hamburguer::before{
+        transform: rotate(135deg);   
+    }
+
+    nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2.5rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-txt{
+        text-align: center;
+    }
+
+    #nav-footer a {
+        text-align: center;
+    }
+
+    #contato {
+        display: flex;
+        flex-direction: row;
+        margin: 10% auto;
+    }
+
+    .contato-txt {
+        margin: auto 0px;
+    }
+
+    .contato-txt p {
+        margin: 0px;
+    }
+
+    .icons-list {
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .icon {
+        margin-right: 0px;
+    }
+
+    #footerLogo {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #icon-id {
+        padding-top: 10px;
+        font-size: 1.5em;
+    }
+
+    #copyright a {
+        margin: 0px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 880px) {
+    /* Fontes e Tamanhos */
+
+    .inicial-image{
+        width: 100%;
+        display: block;
+        height: 440px;
+        margin-top: -1%;
+    }
+
+    .titulo-inicial {
+        font-size: 3em;
+    }
+    
+    .titulo-principal {
+        font-size: 2.5em;
+    }
+
+    .titulo-secundario {
+        font-size: 2.25em;
+    }
+    
+    .titulo-terciario {
+        font-size: 1.75em;
+    }
+
+    .contato-txt p {
+        margin: 5% 0px;
+    }
+
+    #menu a {
+        font-size: 1.25em;
+    }
+
+    .inicial-image {
+        height: 50vh;
+    }
+}

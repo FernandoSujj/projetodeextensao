@@ -1,195 +1,5 @@
-body, ul, main{
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0px;
-}
-
-a{
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-a:hover{
-    color: #79e85d;
-}
-
-/*------------------------------header-------------------------------*/
-#logo{
-    width: 90px;
-    height: 90px;
-    margin-left: 20px;
-    margin-top: 4px;
-}
-
-#header{
-    box-sizing: border-box;
-    margin-left: -10px;
-    margin-top: -30px;
-    width: 100%;
-    height: 130px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-}
-
-#menu{
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-    margin-top: 21px;
-}
-
-#menu a{
-    display: block;
-    padding: .5rem;
-}
-
-#btn-mobile{
-    display: none;
-}
-
-@media (max-width: 600px) {
-    #menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background: white;
-        height: 0px;
-        transition: .6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav.active #menu{
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    #menu a{
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid #79e85d;
-    }
-
-    #btn-mobile{
-        display: flex;
-        padding: .5rem .1rem;
-        font-size: .1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-
-    #hamburguer{
-        border-top: 2px solid;
-        width: 20px;
-    }
-
-    #hamburguer::after  ,#hamburguer::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background-color: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    nav.active #hamburguer{
-        border-top-color: transparent;   
-    }
-
-    nav.active #hamburguer::before{
-        transform: rotate(135deg);   
-    }
-
-    nav.active #hamburguer::after{
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-}
-
-/*-----------------------------Footer----------------------------------*/
-footer{
-    position: absolute;
-	background-color: rgb(25, 25, 25);
-    margin-left: 0%;
-	width: 100%;
-    height: 440px;
-}
-
-#footerBlocos{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.3rem 3rem;
-}
-
-#divFooterBloco{
-    display: block;
-    white-space: pre-line;
-}
-
-#pfooterTitle{
-    font: normal 16pt sans-serif;
-    color: white;
-}
-
-#aFooter{
-    color: white;
-    font: bold 14pt sans-serif;
-    line-height: 1.6;
-}
-
-#aFooter:hover{
-    color: #79e85d;
-    font: bold 14pt sans-serif;
-    line-height: 1.6;
-}
-
-#divFooterIcon{
-    display: inline-block;
-    margin-top: 1.9rem;
-}
-
-#icon{
-    color: white;
-    padding-left: 10px;
-}
-
-#icon:hover{
-    color: #79e85d;
-}
-
-#divBloco2{
-    display: inline-block;
-    justify-content: space-between;
-}
-
-#footerLogo{
-    width: 100px;
-    height: 100px;
-    padding: 0.2rem 1.9rem;
-}
-
-#fotterTexto{
-    font: normal 12pt sans-serif;
-    color: white;
-    margin-top: -85px;
-    margin-left: 140px;
-}
-
 /*-----------------------------imagens----------------------------------*/
-#imgPrincipal{
+.inicial-image{
     width: 100%;
     display: block;
     height: 630px;
@@ -199,64 +9,68 @@ footer{
 #imgMapa{
     position: relative;
     width: 80%;
-    height: 600px;
-    margin-left: 10%;
+    height: auto;
+}
+
+#imgMapa2{
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-top: -30%;
 }
 
 /*-------------------------------mapas------------------------------------*/
 iframe{
     margin-top: 0%;
-    width: 50%;
+    width: 45vw;
+    height: 30vh;
 }
 
-/*------------------------------paragrafos------------------------------------*/
-#h1title{
-    font: bold 24pt sans-serif;
+/*------------------------------ Fontes e Tamanhos ------------------------------------*/
+#txt-white{
     color: white;
+    margin: 5%;
 }
 
-#h1title3{
-    font: bold 24pt sans-serif;
-    color: black;
+#siteParque{
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
 }
 
-#h1title4{
-    font: bold 30pt sans-serif;
-    color: #fff;
+#siteParque:hover{
+    color: #79e85d;
 }
-
-#h1title5{
-    font: bold 30pt sans-serif;
-    color: #fff;
-}
-
-#h1title6{
-    font: bold 24pt sans-serif;
-}
-
-#mapaTitle{
-    font: bold 24pt sans-serif;
-}
-
 
 /*------------------------------Blocos------------------------------------*/
-#divParque{
-    width: 100%;
-    font: normal 16pt sans-serif;
-}
-
-#divBloco-Parque1{
-    padding: 1rem 10% 3rem;
+.resumo-parque{
+    width: auto;
+    height: auto;
     background: rgb(25, 25, 25);
+    padding: 5%;
 }
 
-#divBloco-Parque2{
+.resumo-parque .titulo-principal{
+    color: white;
+    margin: 0px;
+}
+
+.info-parque{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+
+    margin-top: 5%;
 }
 
-#divBloco-Parque3{
+.detalhes-parque{
+    width: 100%;
+}
+
+.sobre-parque{
     background: white;
     width: 80%;
     padding-left: 10%;
@@ -266,9 +80,13 @@ iframe{
     justify-content: space-between;
 }
 
-#divBloco-Parque4{
+.sobre-parque .titulo-secundario {
+    margin-right: 5%;
+}
+
+.atividades-parque{
     background: rgb(25, 25, 25);
-    width: 80%;
+    width: auto;
     padding: 1rem 10% 1rem;
     height: 500px;
     display: flex;
@@ -276,46 +94,65 @@ iframe{
     justify-content: space-between;
 }
 
-#divBloco-Parque5{
+.mapa-parque{
     background: white;
-    width: 80%;
-    height: 700px;
-    margin-left: 10%;
-    display: flex;
+    width: auto;
+    padding: 5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "tit-one tit-two"
+        "map sli";
+    justify-items: center;
     align-items: center;
-    justify-content: space-between;
+
 }
 
-#divBloco-Parque6{
+.mapa-parque .titulo-secundario {
+    grid-area: tit-one;
+}
+
+.mapa-parque .titulo-terciario {
+    grid-area: tit-two;
+
+}
+
+
+
+.mapa-parque #imgMapa {
+    grid-area: map;
+}
+
+.avaliacao-parque{
     background: white;
-    width: 80%;
-    height: 600px;
-    margin-left: 10%;
+    width: auto;
+    height: fit-content;
+    margin: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #pBloco{
-    font: normal 16pt sans-serif;
     color: white;
-    margin-top: -8%;
+    margin: 0px 5% 0px 0px;
 }
 
 .pBloco3{
     width: 600px;
-}
+} 
 
 .pBloco4{
     width: 600px;
     padding: 10%;
-    font: normal 20pt sans-serif;
     color: #fff;
 }
 
 #pBloco6{
     width: 600px;
-    height: 300px;
+    height: fit-content;
     padding-left: 10%;
 }
 
@@ -324,20 +161,11 @@ iframe{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 200px;
+    font-size: 16pt;
 }
 
 #pstar{
     color: #000;
-    font: normal 20pt sans-serif;
-}
-
-#siteParque{
-    color: white;
-}
-
-#siteParque:hover{
-    color: #79e85d;
 }
 
 /*-------------------------slide--------------------------*/
@@ -347,14 +175,14 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(25, 25, 25);
 }
 
 .slider{
-    width: 800px;
-    height: 500px;
+    width: 400px;
+    height: 250px;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 280px;
 }
 
 .slides{
@@ -370,20 +198,20 @@ iframe{
 .slide{
     width: 30%;
     transition: 2s;
-    width: 800px;
-    height: 500px;
+    width: 400px;
+    height: 250px;
 }
 
 .slide img{
-    width: 800px;
-    height: 500px;
+    width: 400px;
+    height: 250px;
     overflow: hidden;
 }
 
 .navigation-manual{
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    width: 400px;
+    margin-top: -200px;
     display: flex;
     justify-content: center;
 }
@@ -410,23 +238,23 @@ iframe{
 }
 
 #radio2:checked ~ .first{
-    margin-left: -27.1%;
+    margin-left: -25%;
 }
 
 #radio3:checked ~ .first{
-    margin-left: -54.2%;
+    margin-left: -50%;
 }
 
 #radio4:checked ~ .first{
-    margin-left: -81.3%;
+    margin-left: -75%;
 }
 
 .navigation-auto{
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 400px;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 300px;
 }
 
 .navigation-auto div{
@@ -454,4 +282,180 @@ iframe{
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #000;
+}
+/*----------------------------------------------------*/
+
+
+@media screen and (max-width: 700px){
+
+    .inicial-image{
+        width: 100%;
+        display: block;
+        height: 440px;
+        margin-top: -1%;
+    }
+
+    
+    #imgMapa2{
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    /*Resumo do Parque */
+    .resumo-parque {
+        width: auto;
+        height: auto;
+        box-sizing: content-box;
+        padding: 5% 5% 10% 5%;
+    }
+
+    .info-parque {
+        display: inline-block;
+        margin-bottom: 5%;
+    }
+
+    #pBloco {
+        margin: 5% 0px 10% 0px;
+        text-align: left;
+    }
+
+    #pBloco li {
+        list-style: none;
+        color: white;
+    }
+
+
+    iframe{
+        width: 100%;
+        height: 50vh;
+    }
+
+
+    /* Sobre o Parque */
+    .sobre-parque, .atividades-parque, .avaliacao-parque {
+        width: auto;
+        height: fit-content;
+        display: block;
+
+        padding: 5%;
+        margin: 5% 0px;
+    }
+ 
+    .pBloco3 {
+        display: block;
+        width: auto;
+    } 
+
+    /* Atividades no Parques */
+    .atividades-parque .pBloco4 {
+        width: auto;
+        padding-top: 5%;
+    } 
+
+    /* Mapa do Parque */
+    .mapa-parque {
+        height: fit-content;
+        display: inline-block;
+        padding: 0px;
+        text-align: center;
+        
+    }
+
+    .slide-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa-parque .titulo-terciario {
+        text-align: center;
+        margin-top: 20%;
+    }
+
+   /* Avaliação */
+    #star {
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 0px 2px;
+    }
+
+    #pstar {
+        font-size: 18px;
+    }
+
+    #pBloco6 {
+        width: auto;
+        height: fit-content;
+        padding: 0px;
+    } 
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 880px) {
+    .resumo-parque {
+        width: auto;
+        height: auto;
+        box-sizing: content-box;
+        padding: 5% 5% 10% 5%;
+    }
+
+    .info-parque {
+        display: inline-block;
+        margin-bottom: 5%;
+    }
+
+    #pBloco {
+        margin: 5% 0px 10% 0px;
+    }
+
+    #pBloco li {
+        list-style: none;
+        color: white;
+    }
+
+    iframe{
+        width: 90vw;
+        height: 40vw;
+    }
+
+    /* Sobre parque */
+    .sobre-parque, .avaliacao-parque div {
+        width: auto;
+        height: fit-content;
+        padding: 5%;
+    }
+
+    .pBloco3 {
+        padding: 5%;
+    }
+
+    /* Mapa do Parque */
+    .mapa-parque {
+        height: fit-content;
+        padding: 0px 5%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .slide-main {
+        display: inline-block;
+    }
+
+    .mapa-parque .titulo-secundario {
+        margin-bottom: 10%;
+    }
+
+    .mapa-parque .titulo-terciario {
+        text-align: center;
+    }
+
+    /* Avaliação */
+    #star {
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px 2px;
+    }
+
 }

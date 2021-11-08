@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" media="screen">
     <link rel="stylesheet" type="text/css" href="./css/parque.css" media="screen">
     <link href="fontawesome/css/all.css" rel="stylesheet">
+
     <title>Parque espaço verde Chico Mendes </title>
 </head>
+
 <body>
     <header id="header">
         <a href="index.html">
             <img id="logo" src="./imagens/logo (1).png">
         </a>
         <nav id="nav">
-            <button id="btn-mobile">Menu
+            <button id="btn-mobile">
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
@@ -25,141 +30,147 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div>
-            <img id="imgPrincipal" src="./imagens/parques/chicomendes3.jpg" alt="Img 1">
-        </div>
-        <div id="divBloco-Parque1">
-            <h1 id="h1title">Parque espaço verde Chico Mendes</h1>
-            <div id="divBloco-Parque2">
-                <p id="pBloco">Endereço: Av. Fernando Símonsen, 566 <br> Cerâmica, São Caetano do Sul - SP, 09540-230<br>Área: 140.000 m²<br>Inauguração: 28/07/1877<br>Aberto diariamente das 5h às 21h<br>Entrada: <strong>Gratuita</strong><br>Site do parque: <a id="siteParque" href="http://www.saocaetanodigital.com.br/sao-caetano-do-sul/espaco-verde-chico-mendes/">Clique aqui</a><br>Contato: Não possui<br> Fone: (11) 4232-5165</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.226511976963!2d-46.57420568554121!3d-23.63205777009075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d2081828899%3A0xdbf7252870e7d2b4!2sEspa%C3%A7o%20Verde%20Chico%20Mendes!5e0!3m2!1spt-BR!2sbr!4v1635082997105!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <img class="inicial-image" src="./imagens/parques/chicomendes3.jpg" alt="Img 1">
+
+        <section class="resumo-parque">
+            <h1 class="titulo-principal">Parque espaço verde Chico Mendes</h1>
+
+            <div class="info-parque">
+                <ul id="pBloco">
+                    <li>Endereço: Av. Fernando Símonsen, 566, São Caetano do Sul - SP, 09540-230</li> 
+                    <li>Área: 140.000 m²</li> 
+                    <li>Inauguração: 28/07/1877</li> 
+                    <li>Aberto diariamente das 5h às 21h</li> 
+                    <li>Entrada: <strong>Gratuita</strong></li> 
+                    <li>Site do parque: <a id="siteParque" href="http://www.saocaetanodigital.com.br/sao-caetano-do-sul/espaco-verde-chico-mendes/">Clique aqui</a></li> 
+                    <li>Contato: Não possui</li> 
+                    <li>Fone: (11) 4232-5165</li> 
+                </ul>
+                <div class="div-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.226511976963!2d-46.57420568554121!3d-23.63205777009075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d2081828899%3A0xdbf7252870e7d2b4!2sEspa%C3%A7o%20Verde%20Chico%20Mendes!5e0!3m2!1spt-BR!2sbr!4v1635082997105!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+                </div>      
             </div>
-        </div>
-        <div id="divParque">
-            <div id="divBloco-Parque3">
-            <h1 id="h1title3">Sobre o Parque</h1>
+        </section>
+
+        <section class="detalhes-parque">
+            <div class="sobre-parque">
+            <h1 class="titulo-secundario">Sobre o Parque</h1>
                 <div class="pBloco3">
-                    <p>O parque espaço verde Chico Mendes, possui mesa para jogos de Drama, xadrez, pingue-pongue, playgrounds, sete quadras poliesportivas, pista de Cooper coberta e descoberta. Lá é permitido o uso de skate e bicicletas, você pode levar seu cachorro, há áreas exclusivas para eles.   
-                    </p>
+                    <p> O parque espaço verde Chico Mendes, possui mesa para jogos de Drama, xadrez, pingue-pongue, playgrounds, sete quadras poliesportivas, pista de Cooper coberta e descoberta. Lá é permitido o uso de skate e bicicletas, você pode levar seu cachorro, há áreas exclusivas para eles. </p>
                 </div>   
             </div>
-            <div id="divBloco-Parque4">
-                <h1 id="h1title4">Atividades que podem ser feitas no parque</h1>
+
+            <div class="atividades-parque">
+                <h1 class="titulo-secundario" id="txt-white">Atividades que podem ser feitas no parque</h1>
                 <div class="pBloco4">
-                    <p>
-                        -Andar de Skate<br>- Caminhada<br>- Ciclismo<br>- Corrida<br>- Futebol<br>- Pingue-pongue<br>- Piquenique<br>- Xadrez
+                    <p id="txt-white">
+                        - Andar de Skate<br>- Caminhada<br>- Ciclismo<br>- Corrida<br>- Futebol<br>- Pingue-pongue<br>- Piquenique<br>- Xadrez
                     </p>
                 </div>
             </div>
-            <div id="divBloco-Parque5">
-                <h1 id="mapaTitle">Mapa do parque</h1>
-            </div>
-            <div class="slide-main">
-                <h1 id="h1title5">Imagens do Parque</h1>
-                <div class="slider">
-                    <div class="slides">
-                        <!--Slides-->
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-                        <input type="radio" name="radio-btn" id="radio4">
-                        <div class="slide first">
-                            <img src="./imagens/parques/chicomendes3.jpg" alt="">
+
+            <div class="mapa-parque">
+                <h1 class="titulo-secundario">Mapa do parque</h1>
+                <img id="imgMapa" src="./imagens/parques/ibirapuera-mapa3.jpg">
+                <!-- Slide -->
+                <h1 class="titulo-terciario">Imagens do Parque</h1>
+                <div class="slide-main">
+                    <div class="slider">
+                        <div class="slides">
+                            <!--Slides-->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+
+                            <div class="slide first">
+                                <img src="./imagens/parques/chicomendes3.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./imagens/parques/chicomendes2.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./imagens/parques/chicomendes1.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./imagens/parques/chicomendes4.jpg" alt="">
+                            </div>
+
+                            <!--Navegador-->
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>
                         </div>
-                        <div class="slide">
-                            <img src="./imagens/parques/chicomendes2.jpg" alt="">
+
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
                         </div>
-                        <div class="slide">
-                            <img src="./imagens/parques/chicomendes1.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="./imagens/parques/chicomendes4.jpg" alt="">
-                        </div>
-                        <!--Navegador-->
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                            <div class="auto-btn4"></div>
-                        </div>
-                    </div>
-                    <div class="navigation-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
                     </div>
                 </div>
             </div>
-            <div id="divBloco-Parque6">
+             
+            <div class="avaliacao-parque">
                 <div>
-                    <h1>Avaliação da equipe</h1>
+                    <h1 class="titulo-secundario">Avaliação da equipe</h1>
                     <div id="star">
                         <p id="pstar">Nota:</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
+
                 <div id="pBloco6">
-                    <p>"O Parque Sabesp Mooca Fiori Gigliotti possui vários ambientes para idades diferentes, tendo um playground bem construída para as crianças ou até mesmo para os adultos se divertirem, e possui um excelente campo para atividades esportivas e culturais para quando tiver um festival, o parque se preoucupa com todas as faixas de idades, tendo uma área reservada para as pessoas da 3° idade. Para entrar no parque é preciso mostrar o RG, nada do que uns 2 minutos para se cadastrar num parque lindo."</p>
+                    <p>"O parque possui uma excelente atmosfera e vista, um ótimo lugar para passeios e piqueniques em volta do lago, com a família ou com os amigos, possuindo uma área bem ampla possibilita que as pessoas possam fazer exercícios e se divertirem com a natureza. "</p>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+
     <footer>
-        <div id="footerBlocos">
-            <div id="divFooterBloco">
-                <p id="pfooterTitle">QL</p>
-                <a id="aFooter" href="index.html">Página Inicial</a>
-                <a id="aFooter" href="parques.html">Parques</a>
-                <a id="aFooter" href="exercicios.html">Exercícios</a>
-                <a id="aFooter" href="aplicativo.html">Aplicativo</a>
+        <div class="footer-list" id="nav-footer">
+            <p class="titulo-secundario" id="txt-white">QL</p>
+            <a class="aFooter" id="txt-white" href="index.html">Página Inicial</a>
+            <a class="aFooter" id="txt-white" href="parques.html">Parques</a>
+            <a class="aFooter" id="txt-white" href="exercicios.html">Exercícios</a>
+            <a class="aFooter" id="txt-white" href="aplicativo.html">Aplicativo</a>
+        </div>
+
+        <div class="footer-list" id="contato">
+            <div class="contato-txt">
+                <p class="titulo-terciario" id="txt-white">Fale com a gente</p>
+                <a class="aFooter" id="txt-white" href="#">(xx)xxxx-xxxx</a>
+                <a class="aFooter" id="txt-white" href="#">contato@ql.com</a>
             </div>
-            <div id="divFooterBloco">
-                <p id="pfooterTitle">Fale com a gente</p>
-                <a id="aFooter" href="#">(xx)xxxx-xxxx</a>
-                <a id="aFooter" href="#">contato@ql.com</a>
-            </div>
-            <div id="divFooterIcon">
-                <a id="icon" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-                <a id="icon" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-                <a id="icon" href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
-                <a id="icon" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+
+            <div class="icons-list">
+                <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
+                <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-twitter-square fa-2x"></i></a>
+                <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-instagram-square fa-2x"></i></a>
+                <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-linkedin fa-2x"></i></a>
             </div>
         </div>
-        <div id="divBloco2">
+
+        <div class="footer-list" id="copyright">
             <a href="index.html">
                 <img id="footerLogo" src="./imagens/logo preto em branco.jpg">
             </a>
-            <div id="fotterTexto">
-                <p>© 2021 QL - Quality of life S.A Instituição de tecnologia.<br>
-                Rua Taquari, 546 - Mooca, São Paulo - SP, 03166-000</p>
-            </div>
+
+            <p class="card-txt" id="txt-white">© 2021 QL - Quality of life S.A Instituição de tecnologia.</p>  
+            <p class="card-txt" id="txt-white">Rua Taquari, 546 - Mooca, São Paulo - SP, 03166-000</p>
         </div>
     </footer>
-    <script>
-        const btnMobile = window.document.getElementById('btn-mobile');
-        function toggleMenu(event) {
-            if (event.type === 'touchstart') event.preventDefault()
-            const nav = window.document.getElementById('nav');
-            nav.classList.toggle('active');
-        }
-        btnMobile.addEventListener('click', toggleMenu);
-        btnMobile.addEventListener('touchstart', toggleMenu);
-    </script>
-    <script>
-        var counter = 1;
-        setInterval(function(){
-            window.document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 4){
-                counter = 1;
-            }
-        }, 5000);
-    </script>
+    
+    <script src="./js/index.js"></script>
 </body>
 </html>
