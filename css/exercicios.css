@@ -48,8 +48,8 @@
 }
 
 .content{
-    width: 100%;
-    
+    width: 99%;
+    text-align: justify;
 }
 
 .content li{
