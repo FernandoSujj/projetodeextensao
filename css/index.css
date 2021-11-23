@@ -42,6 +42,7 @@
 
 #txt-white {
     color: white;
+    text-align: justify;
 }
 
 .bloco-sobre p, .bloco-sobre .titulo-principal {
