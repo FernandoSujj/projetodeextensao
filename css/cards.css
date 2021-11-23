@@ -43,6 +43,7 @@
 .card-text {
     text-align: left;
     font-size: 1.55em;
+    text-align: justify;
 }
 
 .card-btn{
